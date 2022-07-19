@@ -6,7 +6,6 @@ class Solution:
         visited = [[False for i in image[0]] for j in image]
         start = image[sr][sc]
         def helper(x , y):
-            nonlocal image
             if x < 0 or y < 0 or x >= r or y >= c:
                 return
             
