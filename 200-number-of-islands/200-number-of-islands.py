@@ -3,27 +3,25 @@ class Solution:
         
         
         
-        visited = [[False for i in grid[0]] for j in grid]
         r = len(grid)
         c = len(grid[0])
         
         def dfs(i, j):
             
-            if i < 0 or j < 0 or i >= r or j >=c or visited[i][j]:
+            if i < 0 or j < 0 or i >= r or j >=c or grid[i][j] == '0':
                 return
             
-            visited[i][j] = True
-            if grid[i][j] == "0":
-                return
+            grid[i][j] = '0'
             dfs(i - 1, j)
             dfs(i+1, j)
             dfs(i, j-1)
             dfs(i, j+1)
+            return
         
         count = 0
         for i in range(r):
             for j in range(c):
-                if grid[i][j] == "1" and not visited[i][j]:
+                if grid[i][j] == "1":
                     dfs(i, j)
                     count += 1
                     
