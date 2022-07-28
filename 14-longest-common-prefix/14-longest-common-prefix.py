@@ -3,8 +3,6 @@ class Solution:
         
         
         ret = ""
-        
-        
         for i, x in enumerate(strs[0]):
             for j in strs:
                 if i >= len(j) or j[i] != x:
