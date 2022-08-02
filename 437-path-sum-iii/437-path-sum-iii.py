@@ -12,15 +12,12 @@ class Solution:
             c = 0
             if not root:
                 return count
-            
             if root.val == t:
                 c += 1
-                
             if root.left:
                 c += dfs(root.left, t - root.val)
             if root.right:
                 c += dfs(root.right, t - root.val)
-            
             return c
         
         tc, queue = 0, [root]
