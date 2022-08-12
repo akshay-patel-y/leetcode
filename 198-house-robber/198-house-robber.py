@@ -10,7 +10,7 @@ class Solution:
         ret.append(max(nums[0],nums[1]))
         
         for i in nums[2:]:
-            ret.append(max(i + ret[-2],ret[-1], i))
+            ret.append(max(i + ret[-2],ret[-1]))
         
         print(ret)
         return max(ret)
