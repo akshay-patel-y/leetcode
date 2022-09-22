@@ -27,9 +27,9 @@ class Solution:
                     curr.append([newX, newY])
                     continue
                 if x[1] <= t[1] and x[1] >= t[0] and x[0] < t[0]:
-                    newX = t[1]
-                    newY = x[0]
-                    curr.append(sorted([newX, newY]))
+                    newX = x[0]
+                    newY = t[1]
+                    curr.append([newX, newY])
                     continue
                     
             intervals = ret          
