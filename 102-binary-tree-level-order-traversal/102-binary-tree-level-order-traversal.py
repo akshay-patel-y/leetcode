@@ -9,21 +9,18 @@ class Solution:
         
         ret = []
         
-        nodes = [root]
-        while nodes:
+        curr = [root]
+        
+        
+        while curr:
             temp = []
-            newNodes = []
-            for i in nodes:
-                if i == None:
-                    continue
-                temp.append(i.val)
-                if i.left:
-                    newNodes.append(i.left)
-                if i.right:
-                    newNodes.append(i.right)
-            nodes = newNodes
-            if temp:
-                ret.append(temp)
-        
+            c = []
+            for i in curr:
+                if i:
+                    c.append(i.val)
+                    temp.append(i.left)
+                    temp.append(i.right)
+            curr = temp
+            if c:
+                ret.append(c)
         return ret
-        
