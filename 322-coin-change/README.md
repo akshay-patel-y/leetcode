@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/coin-change/">322. Coin Change</a></h2><h3>Medium</h3><hr><div data-read-aloud-multi-block="true"><p>You are given an integer array <code>coins</code> representing coins of different denominations and an integer <code>amount</code> representing a total amount of money.</p>
+<h2><a href="https://leetcode.com/problems/coin-change/">322. Coin Change</a></h2><h3>Medium</h3><hr><div><p>You are given an integer array <code>coins</code> representing coins of different denominations and an integer <code>amount</code> representing a total amount of money.</p>
 
 <p>Return <em>the fewest number of coins that you need to make up that amount</em>. If that amount of money cannot be made up by any combination of the coins, return <code>-1</code>.</p>
 
@@ -29,7 +29,7 @@
 
 <ul>
 	<li><code>1 &lt;= coins.length &lt;= 12</code></li>
-	<li><code>1 &lt;= coins[i] &lt;= 2<sup style="">31</sup> - 1</code></li>
-	<li><code>0 &lt;= amount &lt;= 10<sup style="">4</sup></code></li>
+	<li><code>1 &lt;= coins[i] &lt;= 2<sup>31</sup> - 1</code></li>
+	<li><code>0 &lt;= amount &lt;= 10<sup>4</sup></code></li>
 </ul>
 </div>
